@@ -27,7 +27,7 @@ obtenida por medio d
  */
 
 const moment = require('moment');
-let tiempo =moment().subtract(10, 'days').format('MMM Do YY');
+let tiempo =moment().subtract('days').format('MMM Do YY');
 
 let data2 = JSON.parse(fs.readFileSync("./files/usuarios.json", 'utf8'));
 const usuarios = data2;
